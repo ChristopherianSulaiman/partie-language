@@ -1,0 +1,465 @@
+/* .panel-container {
+  width: 316px;
+  height: 496px;
+}
+
+.purple-layer {
+  width: 100%;
+  height: 14%;
+  background-color: rgb(78, 46, 153);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -20px; /* Adjust this value to raise or lower the text */
+/*}*/
+
+.panel-container {
+  width: 316px;
+  height: 496px;
+  background-color: rgb(35, 28, 58);
+}
+
+.purple-layer {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(76, 68, 118);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -2px;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  top: -37px;
+  right: -105px;
+}
+
+.tooltip-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: purple;
+  margin-right: 5px;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgb(245, 245, 245);
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 5px;
+}
+
+.tooltip.visible {
+  visibility: visible;
+}
+
+.gear-image {
+  display: flex;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+}
+
+.setting {
+  background: none;
+  border: none;
+  padding: 0;
+
+  position: absolute;
+  top: 7px;
+  left: 280px;
+}
+
+.logo {
+  position: absolute;
+  left: 57px;
+  top: 2px;
+}
+
+.logo-image {
+  height: 40px;
+  width: 40px;
+  left: -100px;
+  top: 10px;
+}
+
+.submessage {
+  text-align: center;
+  position: absolute;
+  bottom: 870px;
+  font-weight: bold;
+  font-size: smaller;
+  top: 29px;
+  color: aliceblue;
+  font-style: italic;
+}
+.green-text {
+  color: rgb(131, 241, 175);
+}
+
+.white-text {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 1.5%;
+}
+
+.Qbutton-container,
+.Pbutton-container,
+.Gbutton-container {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 7px;
+  width: 100%;
+  height: 36px;
+  background-color: rgb(76, 68, 118);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Qtext,
+.Ptext,
+.Gtext {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.tooltip-container:hover {
+  background-color: bisque;
+}
+
+.setting:hover {
+  background-color: antiquewhite;
+}
+
+.copas:hover {
+  background-color: antiquewhite;
+}
+
+.tdots:hover {
+  background-color: antiquewhite;
+}
+
+.Qbutton-container:hover {
+  background-color: rgb(110, 74, 255); /* Change to the desired hover color */
+}
+
+.Pbutton-container:hover {
+  background-color: rgb(110, 74, 255); /* Change to the desired hover color */
+}
+
+.Gbutton-container:hover {
+  background-color: rgb(110, 74, 255); /* Change to the desired hover color */
+}
+
+.line-segment {
+  position: absolute;
+  height: 2px;
+  background-color: rgb(76, 68, 118);
+  width: 100%;
+  margin: 0 auto;
+  bottom: -11px;
+}
+
+.noplayers {
+  position: absolute;
+  color: gray;
+  bottom: -54px;
+  right: 82px;
+  font-size: smaller;
+}
+
+.botContainer {
+  position: absolute;
+  height: 18px;
+  background-color: rgb(76, 68, 118);
+  width: 100%;
+  margin: 0 auto;
+  bottom: -414px;
+}
+
+.bottom {
+  position: absolute;
+  color: rgb(131, 241, 175);
+  font-size: xx-small;
+  bottom: -5px;
+  right: 100px;
+}
+.copaspos {
+  position: absolute;
+  top: -13px;
+  right: 14px;
+}
+.copas {
+  background: none;
+  border: none;
+  padding: 0;
+  transform: scale(0.35);
+  /* position: absolute;
+  width: 5px;
+  height: 5px; */
+  /* bottom: 5px;
+  right: 5px; */
+}
+
+.tdots {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  transform: scale(0.26);
+  right: -20px;
+  top: -0.7px;
+}
+
+.language-container {
+  width: 300px;
+  height: 320px;
+  background-color: rgb(59, 51, 100);
+  border-radius: 13px;
+  position: absolute;
+  top: 20px;
+  right: 8.5px;
+
+}
+
+.lang-text {
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  position: absolute;
+  right: 205px;
+  top: -7px;
+}
+
+.eng-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  right: 235px;
+  top: 40px;
+}
+
+.ital-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  right: 241px;
+  top: 84px;
+}
+
+.jap-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  right: 222.5px;
+  top: 128px;
+}
+
+.russ-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  right: 232.6px;
+  top: 172px;
+}
+
+.span-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  right: 230px;
+  top: 216px;
+}
+
+.cancel-container {
+  position: absolute;
+  width: 135px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(76, 68, 118);
+  bottom: 15px;
+  right: 155px;
+  border: none;
+
+}
+
+.cancel-text {
+  position: absolute;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  top: -3.5px;
+  right: 44px;
+}
+
+.cancel-container:hover {
+  background-color: rgb(101, 74, 255);
+}
+
+.save-container {
+  position: absolute;
+  width: 135px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(76, 68, 118);
+  bottom: 15px;
+  right: 10px;
+  border: none;
+}
+.save-container:hover {
+  background-color: rgb(101, 74, 255);
+}
+
+.save-text {
+  position: absolute;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  top: -3.5px;
+  right: 50px;
+}
+
+.x-button {
+  position: absolute;
+  color: rgb(150, 145, 170);
+  border: none;
+  background: none;
+  transform: scale(1.3);
+  right: 16px;
+  top: 2px;
+}
+
+.switch-1 {
+  position: absolute;
+  top: 73px;
+  right: 30px;
+}
+
+.switch-2 {
+  position: absolute;
+  top: 117px;
+  right: 30px;
+}
+
+.switch-3 {
+  position: absolute;
+  top: 163px;
+  right: 30px;
+}
+
+.switch-4 {
+  position: absolute;
+  top: 205px;
+  right: 30px;
+}
+.switch-5 {
+  position: absolute;
+  top: 245px;
+  right: 30px;
+}
+/* .Qbutton-container {
+  position: relative;
+  top: 8%;
+  right: -10px;
+  width: 28%;
+  height: 8%;
+  background-color: rgb(78, 46, 153);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Qtext {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.Pbutton-container {
+  position: relative;
+  top: 8%;
+  right: -130px;
+  width: 28%;
+  height: 8%;
+  background-color: rgb(78, 46, 153);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Ptext {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.Gbutton-container {
+  position: relative;
+  top: 8%;
+  right: -10px;
+  width: 28%;
+  height: 8%;
+  background-color: rgb(78, 46, 153);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.Gtext {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+} */
